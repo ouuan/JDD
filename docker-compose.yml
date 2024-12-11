@@ -1,0 +1,8 @@
+services:
+  jdd:
+    build: .
+    volumes:
+      - ./config:/jdd/config:ro
+      - ./testExample:/jdd/testExample
+      - ./inPuts:/jdd/inPuts
+      - ./outputs:/jdd/outputs

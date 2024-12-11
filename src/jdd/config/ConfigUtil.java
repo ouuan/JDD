@@ -307,9 +307,9 @@ public class ConfigUtil {
     public static void loadConfig(String filePath){
         try{
 
-            if (isOnServer()){
-                filePath = "/home/cbf/dvd-evaluation/evaluation/config/config.properties";
-            }
+            // if (isOnServer()){
+            //     filePath = "/home/cbf/dvd-evaluation/evaluation/config/config.properties";
+            // }
             log.info("filePath = "+filePath);
             Reader configReader = new FileReader(filePath);
             configProperties.load(configReader);
