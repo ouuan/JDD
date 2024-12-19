@@ -84,6 +84,7 @@ public class FragmentsContainer {
         protocolCheckRule.init();
         sources = new HashSet<>(protocolCheckRule.getSourceMethods());
         log.info("Source Methods Number = "+sources.size());
+        sources.forEach(method -> log.info("Source Method: " + method));
 
         // 加载CG
         SootConfig.constructCG();

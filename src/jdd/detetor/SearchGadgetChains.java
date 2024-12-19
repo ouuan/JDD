@@ -253,7 +253,7 @@ public class SearchGadgetChains {
             new TimeOutTask() {
                 @Override
                 protected void task() throws IOException {
-                    log.info("[Identifying Fragment] searching from: " + headMtd.getSignature());
+                    // log.info("[Identifying Fragment] searching from: " + headMtd.getSignature());
                     dataflowDetect.detectFragment(descriptor, callStack);
                 }
 
