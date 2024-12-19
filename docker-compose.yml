@@ -5,4 +5,4 @@ services:
       - ./config:/jdd/config:ro
       - ./testExample:/jdd/testExample
       - ./inPuts:/jdd/inPuts
-      - ./outputs:/jdd/outputs
+      - ./outPuts:/jdd/outPuts
