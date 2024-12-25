@@ -89,10 +89,10 @@ public class JNDICheckRule extends AbstractCheckRule {
             risky = true;
         else if (SPICheck(descriptor,tfNode))
             risky = true;
-        /*else if (connectionCheck(descriptor,transformableNode))
-            risky = true;*/
-//        else if (DNSCheck(descriptor, tfNode))
-//            risky = true;
+        // else if (connectionCheck(descriptor,transformableNode))
+        //     risky = true;
+        else if (DNSCheck(descriptor, tfNode))
+            risky = true;
         else if (TCPPortCheck(descriptor, tfNode))
             risky = true;
         return risky;
